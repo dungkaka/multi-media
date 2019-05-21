@@ -1,0 +1,25 @@
+html
+    head
+        title Group 05 - #{title}
+        block css-js
+            link(rel='stylesheet', href='/css/bootstrap.css')
+            link(rel='stylesheet', href='/css/style.css')
+            script(src='/js/bootstrap.js')
+            script(src='/js/jquery.js')
+    body(class='body')
+        nav(class='navbar navbar-default navbar-static-top')
+            div(class='row header-container')
+                div(class='col-md-3 col-sm-3')
+                    div(class='logo')
+                        a(href='/') Team5Tube
+                div(class='col-md-6 col-sm-6')
+                div(class='col-md-3 col-sm-3')
+                    div(class='logo')
+                        a(href='/') Video On Deam
+
+        div(class='container container-custom')
+            block content
+
+        div(class='footer')
+                div(class='row')
+                    div(class='col-lg-12')

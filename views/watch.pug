@@ -1,0 +1,27 @@
+extends ./layout.pug
+append css-js
+    if hd
+        script(src='/js/changeQuality.js')
+append content
+    div(class='row')
+        div(class='col-md-8')
+            if hd
+                .row
+                    button(class='button btn-primary btn-xs button-custom', id='hd-btn') HD
+                div.row(class="container-custom-1")
+                    video(src="/video/" + _360p controls width="100%" height="auto" data-hd="/video/" + _hd id='video-player')
+            else
+                div.row
+                    video(src="/video/" + _hd controls width="100%" height="auto" id='video-player')
+
+            div
+                h4(class="title-watch-video")  #{title}
+
+        div(class='col-md-4')
+            //- ul
+            //-     each val in videos
+            //-         li
+            //-             div(class='video-card' data-link="/watch/" + val.video)
+            //-                 img(class="video-preview" src="/" + val.img )
+            //-                 div(class='video-title')
+            //-                     h5 #{val.name}

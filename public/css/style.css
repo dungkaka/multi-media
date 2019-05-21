@@ -1,0 +1,63 @@
+/*********** css for header *****************/
+
+.body {
+    background-color: rgb(39, 39, 39)
+}
+
+.header-container {
+    margin: 0 auto;
+    background: rgb(15, 179, 255);
+}
+
+.header-container .logo {
+    line-height: 60px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.header-container .logo>* {
+    color: white;
+    font-weight: bold;
+}
+
+.search-bar {
+    margin-top: 6px;
+}
+
+.search-bar select[name="category"] {
+    background-color: white;
+    height: 36px;
+    border: 1px solid #ccd0d2;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.filter-holder {
+    position: relative;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.title-ctg, .title-ctg>* {
+    color: white;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.container-custom {
+    margin-left: 0px;
+}
+
+.container-custom-1 {
+    margin-left: 30px;
+}
+
+.button-custom {
+    margin-left: 45px;
+}
+
+.title-watch-video {
+    color: white;
+    margin-left: 30px;
+    margin-top: 20px;
+}

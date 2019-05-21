@@ -1,0 +1,28 @@
+extends ./layout.pug
+append css-js
+    script(src='/js/index.js')
+    link(rel="stylesheet", href="/css/index.css")
+block content
+    section#videos-contaner
+
+        div(class='title-ctg')
+           p Category 1 
+        ul.u-fancy-load
+            each val in videos
+                li
+                    div(class='video-card' data-link="/watch/" + val.video)
+                        img(class="video-preview" src="/" + val.img )
+                        div(class='video-title')
+                            h5 #{val.name}
+
+        div(class='title-ctg')
+            p Category 1
+        ul.u-fancy-load
+            each val in videos
+                li
+                    div(class='video-card' data-link="/watch/" + val.video)
+                        img(class="video-preview" src="/" + val.img )
+                        div(class='video-title')
+                            h5 #{val.name}
+
+        
